@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Lora", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: #FAF7F0;
+  color: #2B2B28;
+}
+
+.font-serif {
+  font-family: "Lora", Georgia, serif;
+}
+
+/* Spacious, subtle background grid pattern (2x cell size: 72px by 72px) */
+.portfolio-grid-bg {
+  background-color: #FAF7F0;
+  background-image: 
+    linear-gradient(to right, #E4DFD3 1px, transparent 1px),
+    linear-gradient(to bottom, #E4DFD3 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.dark .portfolio-grid-bg {
+  background-color: #171715;
+  background-image: 
+    linear-gradient(to right, #2C2C28 1px, transparent 1px),
+    linear-gradient(to bottom, #2C2C28 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.dark {
+  color-scheme: dark;
+}
