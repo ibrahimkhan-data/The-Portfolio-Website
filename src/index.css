@@ -38,3 +38,30 @@ html {
 .dark {
   color-scheme: dark;
 }
+
+/* Aggressively hide any injected Netlify badge, drawer, or logo */
+#nl-badge-frame,
+#nl-hud-frame,
+iframe[id*="nl-"],
+iframe[title*="Netlify"],
+iframe[title*="Powered by Netlify"],
+[data-netlify-badge],
+.netlify-badge,
+#netlify-badge,
+netlify-drawer,
+#netlify-drawer,
+div[class*="netlify-drawer"],
+iframe[src*="netlify"],
+[id*="netlify-feedback"],
+[class*="netlify-badge"],
+[data-netlify-drawer] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}

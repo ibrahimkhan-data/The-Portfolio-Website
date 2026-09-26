@@ -66,7 +66,7 @@ export const AboutMe: React.FC = () => {
 
             {/* Core Areas of Focus & Interest - 2-Column (3 Left, 2 Right) Layout */}
             <div className="mb-6 text-left">
-              <h3 className="text-xs uppercase tracking-wider font-bold text-[#3F5D4E] dark:text-[#6EE7B7] mb-3 text-left">
+              <h3 className="text-sm uppercase tracking-wider font-bold text-[#3F5D4E] dark:text-[#6EE7B7] mb-3 text-left">
                 Core Areas of Focus &amp; Interest
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-2 text-sm sm:text-[15px] font-medium text-[#2B2B28] dark:text-[#F5F3EC] text-left">
@@ -100,11 +100,11 @@ export const AboutMe: React.FC = () => {
               </div>
             </div>
 
-            {/* Second Paragraph - Justified */}
+            {/* Second Paragraph - Justified & Italic (smaller text) */}
             <div className="text-left">
               <p 
                 id="about-bio-paragraph-2"
-                className="text-base sm:text-[17px] text-[#2B2B28] dark:text-[#F5F3EC] leading-relaxed text-justify"
+                className="text-sm sm:text-[15px] italic text-[#2B2B28]/85 dark:text-[#F5F3EC]/85 leading-relaxed text-justify"
                 style={{ textAlign: "justify" }}
               >
                 I prioritize data hygiene, analytical thinking, and clean, reproducible SQL and Python code while developing practical expertise through end-to-end exploratory analysis and preparing for industry internship opportunities.
